@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const moment = require('moment');
-const port = 3000;
 
 app.get('/api', (req, res) => {
     const slackName = Oluwateniayomi;
@@ -15,7 +14,7 @@ app.get('/api', (req, res) => {
     const currentUtcTime = moment().utc().format('YYYY-MM-DDTHH:mm:ss[Z]');
 
     // Replace these URLs with your actual GitHub URLs
-    const githubFileUrl = 'https://github.com/icemedia001/HNG.git/index.js';
+    const githubFileUrl = 'https://github.com/icemedia001/HNG/blob/main/index.js';
     const githubRepoUrl = 'https://github.com/icemedia001/HNG.git';
 
     // Create the JSON response
