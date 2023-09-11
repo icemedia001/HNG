@@ -3,10 +3,8 @@ const app = express();
 const moment = require('moment');
 
 app.get('/api', (req, res) => {
-    const slackName = "Oluwateniayomi";
-    const track = 
-    "backend";
-
+    const slackName = req.query.slack_name;
+    const track = req.query.track;
 
     // Get the current day of the week
     const currentDay = moment().format('dddd');
